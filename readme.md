@@ -1,4 +1,4 @@
-<h2>📌 JavaScript Interview Questions & Answers</h2>
+<h2>📌 JavaScript Questions & Answers</h2>
 
 <h3>1. Difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll</h3>
 <ul>
