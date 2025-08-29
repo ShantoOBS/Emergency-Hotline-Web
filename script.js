@@ -30,8 +30,14 @@ async function copied(a,b){
         document.body.removeChild(ta);
         alert(`Copied to clipboard: ${numberText}`);
     }
+
+    let common = document.querySelectorAll(".common-copy");
+
+    for (let x of common) {
+        x.innerHTML=`<i class="fa-regular fa-copy"></i> Copy`;
+    }
     
-    copyValue.textContent="Copied";
+    copyValue.innerHTML=`<i class="fa-regular fa-copy"></i> Copied`;
 
 
 
@@ -77,9 +83,6 @@ function coinUpdate(a, b, c) {
     let time = getCurrentTime();
 
     let temp = [title, serviceNumber, time];
-
-
-
 
     let presentCoin = parseInt(currentCoin.textContent);
 
@@ -221,3 +224,24 @@ document.querySelector("#copy-4").addEventListener("click", async () => {
      copied("number-4","copy-4");
      copyValueIncrease();
 });
+document.querySelector("#copy-5").addEventListener("click", async () => {
+     copied("number-5","copy-5");
+     copyValueIncrease();
+});
+document.querySelector("#copy-6").addEventListener("click", async () => {
+     copied("number-6","copy-6");
+     copyValueIncrease();
+});
+document.querySelector("#copy-7").addEventListener("click", async () => {
+     copied("number-7","copy-7");
+     copyValueIncrease();
+});
+document.querySelector("#copy-8").addEventListener("click", async () => {
+     copied("number-8","copy-8");
+     copyValueIncrease();
+});
+document.querySelector("#copy-9").addEventListener("click", async () => {
+     copied("number-9","copy-9");
+     copyValueIncrease();
+});
+
