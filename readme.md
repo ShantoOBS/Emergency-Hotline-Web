@@ -60,15 +60,14 @@
 <h2 id="folder-structure">📂 Folder Structure</h2>
 <pre><code>
 Emergency-Hotline-Web/
-├── assets/
-│   ├── images/              # Icons, logo, etc.
-│   └── screenshots/         # Demo screenshots
-├── css/
-│   └── style.css            # Styles (or Tailwind build file)
-├── js/
-│   └── app.js               # Main JavaScript logic
-├── index.html               # Main entry page
-└── README.md                # Documentation
+📁 Project Root/
+├── 📁 assets/                     # Static assets (images, icons, etc.)
+│   └── (first commit - 3 weeks ago)
+├── emergency-Hotline.fig         # Figma design file (first commit - 3 weeks ago)
+├── index.html                    # Main HTML file (frontend + functionality - 2 weeks ago)
+├── readme.md                     # Project documentation (updated just now)
+├── script.js                     # JavaScript logic (frontend + functionality - 2 weeks ago)
+├── tailwind.config.js           # Tailwind CSS configuration (navbar/header complete - 3 weeks ago)
 </code></pre>
 
 <h2 id="contributing">🤝 Contributing</h2>
