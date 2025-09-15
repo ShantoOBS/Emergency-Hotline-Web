@@ -1,60 +1,84 @@
-<h2>📌 JavaScript Questions & Answers</h2>
+<h1>🚨 Emergency-Hotline-Web</h1>
+<p>A <strong>responsive emergency hotline website</strong> built with <strong>HTML, CSS (Tailwind / Vanilla), and JavaScript</strong>. Includes hotline cards, call history, coin system, and interactivity.</p>
 
-<h3>1. Difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll</h3>
+<h2>📑 Table of Contents</h2>
 <ul>
-  <li><b>getElementById("id")</b> → Returns a single element with the given ID.</li>
-  <li><b>getElementsByClassName("class")</b> → Returns a live HTMLCollection of elements with that class.</li>
-  <li><b>querySelector("selector")</b> → Returns the first element that matches a CSS selector.</li>
-  <li><b>querySelectorAll("selector")</b> → Returns a static NodeList of all matching elements.</li>
+  <li><a href="#demo">Demo</a></li>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#technologies-used">Technologies Used</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#folder-structure">Folder Structure</a></li>
+  <li><a href="#contributing">Contributing</a></li>
 </ul>
 
-<h3>2. How do you create and insert a new element into the DOM?</h3>
+<h2 id="demo">📱 Demo</h2>
+<p>Add a mobile preview screenshot</p>
+<img width="450" alt="Emergency Hotline UI" src="assets/screenshots/demo.png" />
+<p><a href="REPLACE_WITH_LIVE_LINK" target="_blank">Live Preview</a></p>
+<p><a href="REPLACE_WITH_REPO_LINK" target="_blank">GitHub Repository</a></p>
+
+<h2 id="features">✨ Features</h2>
+<ul>
+  <li>Responsive <strong>navbar</strong> with website name, 💗 heart count, 💰 coin count, and 📋 copy count</li>
+  <li><strong>Hero section</strong> with gradient background, centered logo, title, and slogan</li>
+  <li><strong>Card section</strong> with at least 6 hotline cards:
+    <ul>
+      <li>Icon or image, bilingual name, hotline number, category badge</li>
+      <li>💗 Heart icon increases navbar heart count</li>
+      <li>Buttons: <strong>Copy</strong> (copy hotline + alert) and <strong>Call</strong> (alert + deduct coins)</li>
+    </ul>
+  </li>
+  <li><strong>Call history section</strong> with clear button, showing name, number, and call time</li>
+  <li>Fully <strong>mobile responsive</strong> layout</li>
+</ul>
+
+<h2 id="technologies-used">🛠️ Technologies Used</h2>
+<ul>
+  <li><strong>HTML5</strong> – Page structure</li>
+  <li><strong>CSS / Tailwind CSS</strong> – Styling, responsive design</li>
+  <li><strong>JavaScript (Vanilla)</strong> – DOM manipulation & interactivity</li>
+  <li><strong>DaisyUI</strong> – Tailwind components</li>
+  <li><strong>Figma</strong> – Design reference</li>
+</ul>
+
+<h2 id="installation">⚡ Installation</h2>
 <ol>
-  <li>Create element → <code>document.createElement("div")</code></li>
-  <li>Add content/attributes → <code>textContent</code>, <code>classList</code></li>
-  <li>Insert into DOM → <code>appendChild</code>, <code>append</code>, <code>before</code>, <code>after</code></li>
+  <li>Clone the repository: <code>git clone REPLACE_WITH_REPO_URL</code></li>
+  <li>Navigate to the project folder: <code>cd Emergency-Hotline-Web</code></li>
+  <li>Open <code>index.html</code> in your browser (or use VS Code Live Server)</li>
 </ol>
-<pre>
-<code>
-let div = document.createElement("div");
-div.textContent = "Hello World!";
-document.body.appendChild(div);
-</code>
-</pre>
 
-<h3>3. What is Event Bubbling and how does it work?</h3>
-<p>Event Bubbling means an event starts at the innermost element and propagates outward to its ancestors and its child clicked then parent clicked.</p>
-<pre>
-<code>
-parent.addEventListener("click", () => console.log("Parent clicked"));
-child.addEventListener("click", () => console.log("Child clicked"));
-</code>
-</pre>
-
-<h3>4. What is Event Delegation in JavaScript? Why is it useful?</h3>
-<p>Event Delegation attach one listener on a parent, handle all child events via <code>event.target</code>. it is useful because it saves memory and works on dynamically added elements.</p>
-
-<pre>
-<code>
-parent.addEventListener("click", (e) => {
-  if (e.target.tagName === "BUTTON") {
-    console.log("Button clicked:", e.target.textContent);
-  }
-});
-</code>
-</pre>
-
-<h3>5. Difference between preventDefault() and stopPropagation()</h3>
+<h2 id="usage">🚀 Usage</h2>
 <ul>
-  <li>preventDefault() stops the browser's default action (form submit, link navigation, etc.)</li>
-  <li>stopPropagation() stops the event from bubbling up to parent elements.</li>
+  <li>Click 💗 icons → increase navbar heart count</li>
+  <li>Click <strong>Copy</strong> button → copy hotline number + increment counter</li>
+  <li>Click <strong>Call</strong> button → alert + deduct 20 coins + record history with timestamp</li>
+  <li>Click <strong>Clear History</strong> → remove all records from call history</li>
 </ul>
-<pre>
-<code>
-// Example: prevent form submission
-form.addEventListener("submit", (e) => e.preventDefault());
 
-// Example: stop bubbling
-child.addEventListener("click", (e) => e.stopPropagation());
-</code>
-</pre>
+<h2 id="folder-structure">📂 Folder Structure</h2>
+<pre><code>
+Emergency-Hotline-Web/
+├── assets/
+│   ├── images/              # Icons, logo, etc.
+│   └── screenshots/         # Demo screenshots
+├── css/
+│   └── style.css            # Styles (or Tailwind build file)
+├── js/
+│   └── app.js               # Main JavaScript logic
+├── index.html               # Main entry page
+└── README.md                # Documentation
+</code></pre>
+
+<h2 id="contributing">🤝 Contributing</h2>
+<ol>
+  <li>Fork the repository</li>
+  <li>Create a new branch (<code>git checkout -b feature-name</code>)</li>
+  <li>Make your changes</li>
+  <li>Commit (<code>git commit -m 'Add feature'</code>)</li>
+  <li>Push (<code>git push origin feature-name</code>)</li>
+  <li>Open a Pull Request</li>
+</ol>
+
+<h3>🎯 Let's Code and Achieve your Dream!</h3>
