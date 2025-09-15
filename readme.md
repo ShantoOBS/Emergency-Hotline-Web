@@ -14,9 +14,8 @@
 
 <h2 id="demo">📱 Demo</h2>
 <p>Add a mobile preview screenshot</p>
-<img width="450" alt="Emergency Hotline UI" src="assets/screenshots/demo.png" />
-<p><a href="REPLACE_WITH_LIVE_LINK" target="_blank">Live Preview</a></p>
-<p><a href="REPLACE_WITH_REPO_LINK" target="_blank">GitHub Repository</a></p>
+<img width="947" height="434" alt="Image" src="https://github.com/user-attachments/assets/d6c019eb-688d-4cf1-9ca1-e5e1e77378d9" />
+<p><a href="https://shantoobs.github.io/Emergency-Hotline-Web/" target="_blank">Live Preview</a></p>
 
 <h2 id="features">✨ Features</h2>
 <ul>
